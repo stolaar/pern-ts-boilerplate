@@ -1,0 +1,100 @@
+@import './variables';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lat-Bold, sans-serif;
+}
+
+p, span, a, small {
+  font-family: Lato-Regular, sans-serif;
+}
+
+p, span {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  font-weight: normal;
+  src: local("Avenir-Book"), url(./fonts/Avenir-Book.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: local("Avenir-Medium"), url(./fonts/Avenir-Medium.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant-Regular';
+  src: local('Cormorant-Regular'), url(./fonts/Cormorant-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: "Cormorant-Bold";
+  src: local("Cormorant-Bold"), url(./fonts/Cormorant-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Lato-Heavy";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap"), local("truetype");
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: local("Lato-Regular"), url(./fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: local("Lato-Bold"), url(./fonts/Lato-Bold.ttf) format('truetype');
+}
+
+
+/*  BUTTONS  */
+
+.btn {
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: $light-text;
+  background: $primary;
+  border: 1px solid $primary-light;
+}
+
+.btn-primary:hover {
+  background: $primary-light;
+}
+
+
+.btn-secondary {
+  color: $light-text;
+  background: $secondary;
+  border: 1px solid $secondary-light;
+}
+
+.btn-secondary:hover {
+  background: $secondary-light;
+}
+
+
+/*  end BUTTONS  */
+/*  INPUT  */
+
+input {
+  padding: 7px 12px;
+}
+
+/* end INPUT  */
+/* CONTAINERS */
+.min-h-100 {
+  min-height: calc(100vh - 67px);
+  height: calc(100vh - 67px);
+}
+
+/* end CONTAINERS */

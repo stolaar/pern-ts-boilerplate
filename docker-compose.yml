@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: boilerplate:${BUILD_NUMBER}
+    container_name: boilerplate
+    environment:
+      - DB_USER
+      - DB_PASSWORD
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_DATABASE
+      - EMAIL_ADDRESS
+      - EMAIL_PASSWORD
+    volumes:
+      - /home/ace/boilerplate/app_logs:/usr/src/boilerplate/logs:rw
+    restart: always
+    ports:
+      - "5007:5000"
+  db:
+    image: postgres:11.2-alpine
+    container_name: postgres-${BRANCH_NAME}
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    volumes:
+      - ./boilerplate/init-postgres.sh:/docker-entrypoint-initdb.d/init-postgres.sh
+      - /opt/boilerplate-db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"

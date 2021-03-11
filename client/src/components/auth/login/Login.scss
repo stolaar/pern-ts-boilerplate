@@ -1,0 +1,85 @@
+@import '../../../typography/variables.scss';
+
+.login-form {
+    margin: auto;
+    background-size: cover;
+    flex: 1;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: $primary;
+
+    * {
+        color: $light-text;
+    }
+}
+
+.login-form small {
+    margin: 7px;
+    cursor: pointer;
+}
+
+.login-form small:hover {
+    opacity: 0.8;
+}
+
+.login-form h3 {
+    font-family: Quicksand-SemiBold, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+small.info {
+    color: dodgerblue;
+}
+
+small > a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+#forgot-password {
+    margin-top: 15px;
+}
+
+.confirmation-link-sent p {
+    font-family: Quicksand-SemiBold, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    margin: 0;
+}
+
+.confirmation-link-sent {
+    background: rgba(232, 232, 232, 0.9);
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.enter-birthday span {
+    color: #000000;
+    font-family: Quicksand-SemiBold, sans-serif;
+    font-size: 16px;
+}
+
+.login-form #quantity {
+    color: #000000;
+    font-weight: bold;
+}
+
+.login-form .package-quantity-container {
+    margin-bottom: 10px;
+}
+
+.login-form input[type='checkbox'] {
+    margin-right: 10px;
+}
+.login-form #gift_container {
+    text-align: left;
+}

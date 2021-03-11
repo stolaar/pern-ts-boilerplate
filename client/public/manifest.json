@@ -1,0 +1,25 @@
+{
+  "short_name": "ts-boilerplate",
+  "name": "PERN Typescript boilerplate",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192 96x96",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-icon-96x96",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

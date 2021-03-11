@@ -1,0 +1,15 @@
+.expandable-container {
+    max-height: 600px;
+    transition: max-height 0.5s ease-in;
+    display: unset;
+    visibility: visible;
+}
+
+.expandable-container.collapsed {
+    max-height: 0;
+    visibility: hidden;
+}
+
+.expandable-container.collapsed div {
+    display: none;
+}

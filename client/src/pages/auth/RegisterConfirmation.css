@@ -1,0 +1,49 @@
+.register-confirmation {
+    margin: auto;
+    background-size: cover;
+    height: 100vh;
+    flex: 1;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.register-confirmation h2 {
+    font-family: Quicksand-SemiBold, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.register-confirmation p {
+    font-family: Quicksand-Regular, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.box-sizes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.choose-box-size-wrapper {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.choose-box-size-wrapper button {
+    margin: 5px auto;
+}
+
+.choose-box-size-wrapper span {
+    color: #000000;
+    font-family: Quicksand-SemiBold, sans-serif;
+    font-size: 16px;
+}

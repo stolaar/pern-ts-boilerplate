@@ -1,0 +1,59 @@
+@import "../../typography/variables";
+
+section.landing-page {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-size: cover;
+    object-fit: cover;
+    background: $primary;
+    position: relative;
+    flex-wrap: wrap;
+
+    .login-form {
+        height: unset;
+        min-height: unset;
+        margin: unset;
+        padding-bottom: 20%;
+
+        input, button {
+            width: 100%;
+        }
+
+        form {
+            min-width: 300px;
+        }
+    }
+
+    .landing-page-content {
+        padding-bottom: 20%;
+        padding-left: 10%;
+        text-align: left;
+        color: $light-text;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        p {
+            max-width: 300px;
+        }
+    }
+
+    * {
+        color: $light-text;
+    }
+}
+
+.shape-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex: 1;
+    svg {
+        width: 100%;
+    }
+
+}

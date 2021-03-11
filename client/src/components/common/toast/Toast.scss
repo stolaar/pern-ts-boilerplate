@@ -1,0 +1,25 @@
+@import '../../../typography/variables';
+
+.toast-message-wrapper {
+    z-index: 2001;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: $light-text;
+    border-radius: 7px;
+    bottom: 7%;
+    right: 7%;
+    margin: auto;
+    position: fixed;
+    font-family: Quicksand-Regular, sans-serif;
+    font-size: 15px;
+    border: none;
+    min-width: 200px;
+    max-width: 230px;
+    word-break: break-word;
+    text-align: center;
+}
+
+.toast-message-wrapper.toast-error {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
